@@ -1,2 +1,0 @@
-# landingpages
-Created with CodeSandbox
