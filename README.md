@@ -4,7 +4,28 @@ Simple script to bind querystring data into body replacers
 
 ## How to use
 
-Import <script> tag targeting to the optimized (dist)
+Put inside your <head> tag, as the last item before </head> the following snippet
+
+```
+    <script src="https://cdn.guiabolso.com.br/landingpages/index.js"></script>
+    <script>
+        run();
+    </script>
+```
+
+Then, when you receive querystring parameters, it'll be parsed as its name and the following
+two brackets reference
+
+```
+url
+?name=aboot+cabro
+
+html
+<p>my name is {{name}}</p>
+
+output 
+<p>my name is aboot cabro</p>
+```
 
 ## How to build
 
