@@ -5,11 +5,11 @@ workflow "Simple build deploy" {
 
 action "Install" {
   uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  runs = "install"
+  runs = "npm install"
 }
 
 action "Build" {
   uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  runs = "build"
+  runs = "npm run build"
   needs = ["Install"]
 }
