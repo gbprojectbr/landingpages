@@ -9,7 +9,7 @@ function parseQuery(location) {
     for (var i = 0; i < tuples.length; i += 1) {
       var param = tuples[i].split(/=/);
 
-      output[param[0]] = param[1] ? decodeURI(param[1]) : undefined;
+      output[param[0]] = param[1] ? decodeURIComponent(param[1]) : undefined;
     }
   }
 
